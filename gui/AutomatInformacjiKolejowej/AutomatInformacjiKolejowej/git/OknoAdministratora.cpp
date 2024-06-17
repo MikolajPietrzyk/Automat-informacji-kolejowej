@@ -1,0 +1,2 @@
+#include "OknoAdministratora.h"
+

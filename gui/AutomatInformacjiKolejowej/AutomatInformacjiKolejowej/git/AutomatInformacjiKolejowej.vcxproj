@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8E3A355E-6031-4A9B-85C7-968CA1BC79E3}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>AutomatInformacjiKolejowej</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Konwersja.cpp" />
+    <ClCompile Include="OknoAdministratora.cpp" />
+    <ClCompile Include="OknoAdministratoraZalogowany.cpp" />
+    <ClCompile Include="OknoDodajNowyPociag.cpp" />
+    <ClCompile Include="OknoDodawaniaAdministratora.cpp" />
+    <ClCompile Include="OknoRozkladuJazdy.cpp" />
+    <ClCompile Include="OknoTworzenieOdwolanegoPociagu.cpp" />
+    <ClCompile Include="OknoTworzenieOpoznionegoPociagu.cpp" />
+    <ClCompile Include="OknoUsuwaniaPociagu.cpp" />
+    <ClCompile Include="OknoUsuwanieAdministratora.cpp" />
+    <ClCompile Include="OknoUzytkownika.cpp" />
+    <ClCompile Include="OknoWyszukiwaniaPoNazwie.cpp" />
+    <ClCompile Include="OknoWyszukiwaniaPoNumerze.cpp" />
+    <ClCompile Include="OknoWyszukiwaniaPoStacjiDocelowej.cpp" />
+    <ClCompile Include="OknoZmianaInformacjiOPociagu.cpp" />
+    <ClCompile Include="StartoweOkno.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BazaDanych.h" />
+    <ClInclude Include="Konwersja.h" />
+    <ClInclude Include="OknoAdministratora.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoAdministratoraZalogowany.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoDodajNowyPociag.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoDodawaniaAdministratora.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoRozkladuJazdy.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoTworzenieOdwolanegoPociagu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoTworzenieOpoznionegoPociagu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoUsuwaniaPociagu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoUsuwanieAdministratora.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoUzytkownika.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoWyszukiwaniaPoNazwie.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoWyszukiwaniaPoNumerze.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoWyszukiwaniaPoStacjiDocelowej.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OknoZmianaInformacjiOPociagu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StartoweOkno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OknoAdministratora.resx">
+      <DependentUpon>OknoAdministratora.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoAdministratoraZalogowany.resx">
+      <DependentUpon>OknoAdministratoraZalogowany.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoDodajNowyPociag.resx">
+      <DependentUpon>OknoDodajNowyPociag.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoDodawaniaAdministratora.resx">
+      <DependentUpon>OknoDodawaniaAdministratora.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoRozkladuJazdy.resx">
+      <DependentUpon>OknoRozkladuJazdy.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoTworzenieOdwolanegoPociagu.resx">
+      <DependentUpon>OknoTworzenieOdwolanegoPociagu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoTworzenieOpoznionegoPociagu.resx">
+      <DependentUpon>OknoTworzenieOpoznionegoPociagu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoUsuwaniaPociagu.resx">
+      <DependentUpon>OknoUsuwaniaPociagu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoUsuwanieAdministratora.resx">
+      <DependentUpon>OknoUsuwanieAdministratora.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoUzytkownika.resx">
+      <DependentUpon>OknoUzytkownika.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoWyszukiwaniaPoNazwie.resx">
+      <DependentUpon>OknoWyszukiwaniaPoNazwie.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoWyszukiwaniaPoNumerze.resx">
+      <DependentUpon>OknoWyszukiwaniaPoNumerze.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoWyszukiwaniaPoStacjiDocelowej.resx">
+      <DependentUpon>OknoWyszukiwaniaPoStacjiDocelowej.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoZmianaInformacjiOPociagu.resx">
+      <DependentUpon>OknoZmianaInformacjiOPociagu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartoweOkno.resx">
+      <DependentUpon>StartoweOkno.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
